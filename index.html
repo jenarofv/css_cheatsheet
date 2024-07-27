@@ -26,19 +26,98 @@
       </H1>
     </header>
 
-    <p id=Introduction>
-      When you open a website, HTML elements are rendered using a "box model".
-      Each elements is drawn/displayed inside a box, though we rarely look at
-      it. In fact, this <code>&lt;p&gt;</code> element has its own box.
-    </p>
-    
-    <figure>
-      <img
-      src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/boxmodel.png"
-      alt="Box Model diagram"
-      width= 400px />
-      <figcaption> Box model digram.</figcaption>
-    </figure>
+    <section id=Introduction>
+      <p>
+        When you open a website, HTML elements are rendered using a "box model".
+        Each elements is drawn/displayed inside a box, though we rarely look at
+        it. In fact, this <code>&lt;p&gt;</code> element has its own box.
+      </p>
+
+      <p>
+        In short words, each box is delimited by its <em>border</em>. The
+        distance between the box and its content is called the <em>padding</em>,
+        and the distance between the border and the closest element is called
+        the <em> margin</em>. The three of them border, margin and padding, have
+        top, bottom, left and right specifications.
+      </p>
+
+      <figure>
+        <img
+        src="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model/boxmodel.png"
+        alt="Box Model diagram"
+        width= 400px />
+        <figcaption> Box model digram as seen on
+          <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_model>MDN</a>.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id=table-section>
+      <table>
+
+        <thead>
+          <tr>
+            <th class="element-title"> Element </th>
+            <th class="description-title"> Description </th>
+            <th> Shorthand for... </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class=element>Margin </td>
+            <td> Distance from the border of the box to and adjacent element.
+              It is measured horizontally from vertical borders and vertically
+              from horizontal borders.
+            </td>
+            <td>
+              <code> margin-top</code>,
+              <code> margin-right</code>,
+              <code> margin-bottom</code>,
+              <code> margin-left</code>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=element>Border</td>
+            <td> The sometimes invisible line that is the edge of the acutal
+              box. For each of the four edges, one can control width, color and
+              style.
+            </td>
+            <td>
+              <code>border-width</code>,
+              <code>border-style</code>,
+              <code>border-color</code>,
+              each of which is a shorthand for its top, bottom, right and left
+              constituents.
+            </td>
+          </tr>
+
+          <tr>
+            <td class=element>Padding</td>
+            <td>A blank space between the border of the box and the content.
+              Can be thought of as an “inner margin”.</td>
+            <td>
+              <code> padding-top</code>,
+              <code> padding-right</code>,
+              <code> padding-bottom</code>,
+              <code> padding-left</code>
+            </td>
+          </tr>
+          <tr>
+            <td class=element>Width</td>
+            <td> Actual width of the content.</td>
+            <td> &mdash; </td>
+          </tr>
+          <tr>
+            <td class=element>Height</td>
+            <td> Actual height of the content.</td>
+            <td> &mdash; </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
 
     <footer>
       <p>
